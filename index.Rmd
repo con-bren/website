@@ -1,5 +1,5 @@
 ---
-title: " "
+title: "Connor Brennan"
 classoption: twocolumn
 ---
 
@@ -24,22 +24,19 @@ classoption: twocolumn
 
 __Connect with me__
 <br>
-rui.pei at upenn.edu <br>
-[![](files/images/twitter.png){width=40px}](https://twitter.com/ruipei_penn)
-[![](files/images/github.png){width=40px}](https://github.com/ruipei1)
+brenco at pennmedicine.upenn.edu <br>
+[![](files/images/github.png){width=40px}](https://github.com/sharsnik2)
 
 <br>
 <br>
-__What am I up to?__<br>
-I'm super excited to virtually attend ICA20! You can watch my talk on "Neural processes associated with habitual and emotional Facebook use" [here](https://www.youtube.com/watch?v=Xup4nB9zZT0&t=14s).
 </div>
 
 
 <div class="column-right">
-I am a Ph.D candidate at the Annenberg School for Communication at University of Pennsylvania. I completed a B.Sc of Cognitive Neuroscience at Brown University. 
+I am a Ph.D candidate in Neuroscience at the University of Pennsylvania. I have a B.S. in Physics from the university of Washington.
 <br>
 
-I'm interested in combining developmental neuroscience and communication research to promote healthy behavior in adolescents and young adults. 
+I am interested in understanding the mechanisms that allow intelligent systems (for example, biological brains and artificial neural networks) to perform behave adaptively to the environment they have been selected for.
 <br>
 <br>
 <br>
@@ -49,8 +46,8 @@ You can download my CV [here](files/cv_vitae.pdf) (last update `r format(Sys.tim
 <br>
 <br>
 __Other links__<br>
-[Communication Neuroscience Lab](https://cn.asc.upenn.edu)<br>
-[Annenberg School for Communication](https://asc.upenn.edu)
+[Proekt Lab](http://proektlab.org/)<br>
+[Neuroscience Graduate Group](https://www.med.upenn.edu/ngg/)
 
 
 </div>

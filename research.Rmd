@@ -1,7 +1,27 @@
 ---
-title: ""
+title: "Research"
 ---
 <br>
 <br>
 
-More to come.
+<h3>How do machines play games?</h3>
+There is a long history of artificial intelligence going circuit board to head with professional game players. Starting with Chess and recently Go, board games have been fully dominated by AI. Recently, even live action video games such as DOTA2 and Starcraft 2 have fallen to the reign of the machine. Yet, there remain many weaknesses in these artificial agents: they take may lifetimes to train, and only play a single game. We seek to use the rising field of dynamics in intelligent systems to understand how these machines perform the computations necessary to perform at super-human levels on their game of choice. How do the strategies enacted by such agents compare to those enacted by humans? 
+
+<br>
+<br>
+
+<h3>LOOPER: a tool for extracting simple and interpretable models from experimentally observed neuronal activity traces.</h3>
+The properties of artificial networks that facilitate computation can be inferred by applying linear stability analysis. This is not possible in biological systems as we cannot know the full equations of motion. LOOPER attempts to rectify this problem by grouping similar trajectories of the observed neuronal activity into clusters. These clusters, which we refer to as loops, correspond to consistent patterns of activation in the system -- and thus represent some conserved computational information. The structure of branching pattern of the loops is a topological description of the dynamics that embodies the same information as standard linear stability analysis.
+
+<center>![](files/images/MethodOverview.tif){}</center>
+
+<br>
+<br>
+
+<h3>Modeling <i>C. elegans</i> nervous system.</h3>
+Application of LOOPER-like analysis to nematode <i>C. elegans</i> results in a model of nervous system dynamics that allows for predictions of future animal behaviors.
+
+<center>![](files/images/WormModel2.tif){}</center>
+
+<br>
+<br>

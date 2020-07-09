@@ -1,10 +1,10 @@
 ---
-title: " "
+title: "Publications"
 output:
   html_document
 ---
 
-```{r echo= FALSE, message=FALSE}
+```{r echo= FALSE, message=FALSE, warning=FALSE}
 rm(list = ls())
 if (!require("pacman")) install.packages("pacman",repos = "http://cran.us.r-project.org")
 pacman::p_load(ggplot2, tidyverse, dplyr, scholar, knitr, kableExtra,readxl)
@@ -19,14 +19,12 @@ process_paper_df = function(pub_df){
     pubstring = paste0(reordered_pub$author[i], " (",
                      reordered_pub$year[i],
                      "). ", reordered_pub$title[i], ". *",
-                     reordered_pub$journal[i], "*     ",
-                     "[link to paper](files/papers/", reordered_pub$pubid[i], ".pdf)")
+                     reordered_pub$journal[i], "*     ")
   reordered_pub$pubstring[i] = pubstring
   }
 
   reordered_pub = reordered_pub %>%
-  mutate(id = c(1:nrow(reordered_pub)),
-         link = paste0("[link to paper](files/papers/", pubid, ".pdf)"))   # add links to publications
+  mutate(id = c(1:nrow(reordered_pub)))   # add links to publications
   return(reordered_pub)
 }
 ```
@@ -38,13 +36,19 @@ process_paper_df = function(pub_df){
 
 
 ```{r echo = FALSE,message=FALSE}
-pubs = get_publications("UGCZ5GAAAAAJ") %>%
+pubs = get_publications("asa20tUAAAAJ") %>%
   mutate_all(as.character) # get pubs from google scholar
 
+pubs_16 = pubs %>% filter(year == "2016")
+pubs_17 = pubs %>% filter(year == "2017")
+pubs_18 = pubs %>% filter(year == "2018")
 pubs_19 = pubs %>% filter(year == "2019")
 pubs_20 = pubs %>% filter(year == "2020")
 
 
+reordered_16 = process_paper_df(pubs_16)
+reordered_17 = process_paper_df(pubs_17)
+reordered_18 = process_paper_df(pubs_18)
 reordered_19 = process_paper_df(pubs_19)
 reordered_20 = process_paper_df(pubs_20)
 
@@ -59,12 +63,30 @@ kable(reordered_19 %>%
       table.attr = "style='width:80%;'", 
       caption = "2019") %>%
   kable_styling()
+
+kable(reordered_18 %>%
+        select(id, pubstring), row.names = FALSE, col.names = NULL,
+      table.attr = "style='width:80%;'", 
+      caption = "2018") %>%
+  kable_styling()
+
+kable(reordered_17 %>%
+        select(id, pubstring), row.names = FALSE, col.names = NULL,
+      table.attr = "style='width:80%;'", 
+      caption = "2017") %>%
+  kable_styling()
+
+kable(reordered_16 %>%
+        select(id, pubstring), row.names = FALSE, col.names = NULL,
+      table.attr = "style='width:80%;'", 
+      caption = "2016") %>%
+  kable_styling()
 ```
 
 
 
 
-<center> <h3>Conferences</h3> </center>
+<center> <h3>Conferences and Talks</h3> </center>
 
 
 ```{r include = TRUE,echo = FALSE, message=FALSE, warning = FALSE}
@@ -90,16 +112,6 @@ for (i in c(1:nrow(talks))){
 
 kable(talks %>%
         select(id, pubstring), row.names = FALSE, col.names = NULL,
-      table.attr = "style='width:80%;'") %>%
-  kable_styling()
-```
-
-<center> <h3>Open Science Data Reports</h3> </center>
-
-```{r include = TRUE,echo = FALSE, message=FALSE, warning = FALSE}
-reports = data.frame(name = "[Framing effects on the effectiveness and virality of health messages related to COVID-19](https://cnlab.github.io/covid19-message-framing/) (With the Communication Neuroscience Lab at Upenn)")
-
-kable(reports, row.names = FALSE, col.names = NULL,
       table.attr = "style='width:80%;'") %>%
   kable_styling()
 ```
