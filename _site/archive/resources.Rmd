@@ -1,0 +1,231 @@
+---
+title: "Resources - Rui Pei"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+---
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+</style>
+
+<br>
+<br>
+<br>
+<br>
+
+Here is a collection of resources that I have found useful. 
+
+### Statistics
+
+#### 1. Seeing theory
+<br>
+![](files/images/seeingtheory.jpg){width=350px}
+
+Introductory course on probability and statistics, offers free PDF download. [Link](https://seeing-theory.brown.edu/index.html)
+
+<br>
+
+#### 2. Gary's King's lectures on quantitative methods
+
+Prof. Gary King has a great lecture series on Quantitative Social Science Methods hosted on [Youtube](https://www.youtube.com/playlist?list=PL0n492lUg2sgSevEQ3bLilGbFph4l92gH). 
+
+<br>
+
+#### 3. MIT open course: Statistics for Applications
+
+MIT's open course on statistics, provides a introductory level overview on topics such as MLE, regression, bayesian statistics, and principle component analysis. 
+[Link](https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/syllabus/)
+
+<br>
+
+
+#### 4. Social network analysis
+
+Here are some useful resources on social network analysis:
+
+* Book: [Egocentric data analysis](https://www.cambridge.org/core/books/egocentric-network-analysis/D241B6D07F1A5C760657F252FAD65A4C)
+
+
+* Lecture videos from Duke's 2021 Social Networks and Health Workshop: [Link](https://sites.duke.edu/dnac/training/)
+
+* Some social network datasets to play with: [1](https://icon.colorado.edu/#!/networks), [2](https://networks.skewed.de/), [3](https://networkrepository.com/temporal-networks.php)
+
+* Network visualization using Python [Github repo](https://github.com/benmaier/netwulf)
+
+<br>
+
+#### 5. Power analsysis
+
+Some resources for how to do simulation-based power analysis in R (using the "simr" package)
+
+* https://www.journalofcognition.org/articles/10.5334/joc.72/
+* https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12504
+
+* https://humburg.github.io/Power-Analysis/simr_power_analysis.html
+
+* http://www.alexanderdemos.org/Mixed9.html
+
+For fMRI:
+
+https://brainpower.readthedocs.io/en/latest/index.html
+
+<br>
+
+#### 6. Book on EMA analysis
+
+Free online book on Experience Sampling data analysis, with data and R code to replicate examples in the book.
+[Link](https://www.kuleuven.be/samenwerking/real/real-book/index.htm)
+<br>
+<br>
+<br>
+<br>
+#### 7. Book on Ego networks
+
+Book titled *"Personal Networks: Classic Readings and New Directions in Egocentric Analysis"*, out Oct 2021. [Link](https://www.cambridge.org/core/books/personal-networks/B60D05DAC210586DA1B8CCE133199477)
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+### fMRI
+<br>
+
+#### 1. Neuromatch conference talks
+
+[Link](https://www.youtube.com/channel/UCcBKrxkfNv04R9PXLovjf5w)
+
+
+About 100 talks from neuromatch conference! Everything is tagged and linked and closed captioned via machine learning.
+
+<br>
+
+#### 2. Prof. Rebecca Saxe's fMRI bootcamp
+
+A series of tutorial videos on fMRI analyses (featuring univariate analyses, MVPA, RSA, classification) taught Prof. Rebecca Saxe of MIT.
+
+[Link](https://cbmm.mit.edu/fmri-bootcamp)
+
+<br>
+
+
+#### 3. Dartmouth's tutorial on fMRI analyses using Python 
+
+Course Overview: "The goal of the class is to introduce: (1) how the scanner generates data, (2) how psychological states can be probed in the scanner, and (3) how this data can be processed and analyzed. Students will be expected to analyze brain imaging data using the opensource Python programming language. We will be using several packages such as numpy, matplotlib, nibabel, nilearn, fmriprep, and nltools. This course will be useful for students working in neuroimaging labs, completing a neuroimaging thesis, or interested in pursuing graduate training in fields related to cognitive neuroscience."
+
+[Link](https://dartbrains.org/content/intro.html)
+
+For example, they have a chapter on PPI analysis using nilearn pipelines [here](https://dartbrains.org/content/Connectivity.html).
+
+
+<br>
+
+#### 4. Some useful brain parcellations
+
+* [Github repo](https://github.com/canlab/Neuroimaging_Pattern_Masks) of collections of parcellations and multivariate signature patterns 
+
+* [Seitzman 2021 Parcellation](https://www.sciencedirect.com/science/article/pii/S105381191930881X?via%3Dihub) ("with improved representation of the subcortex and cerebellum)
+
+<br>
+
+#### 5. Tutorial for Neuroimaging Analysis Methods For Naturalistic Data
+
+Online book (with python code examples) from the Dartbrains Neuroimaging group
+[Link](https://naturalistic-data.org/content/intro.html)
+
+<br>
+
+#### 6. Visualization
+
+Here are some resources on fMRI data visualization
+
+* Workbench: [link](https://www.humanconnectome.org/software/connectome-workbench) [tutorial](files/other/Visualization by Workbench.pdf)
+
+* Nilearn: [link](https://nilearn.github.io/plotting/index.html)
+
+<br>
+
+#### 7. Neurohackademy
+
+A few years of lectures on many different fMRI analysis tools and Python.
+
+[Link](https://neurohackademy.org/)
+
+#### 8. Dr. Martin Monti's lectures on fMRI
+
+Dr. Martin Monti, from UCLA, has made lectures from his course names "Computational Methodology for Neuroimaging" available online [here](https://www.youtube.com/channel/UC0WCvnQpd0kADri7zyEopxA/videos). 
+
+<br>
+<br>
+<br>
+<br>
+
+### Other
+
+#### 1. Friendly Universe
+<br>
+![](files/images/fun.png){width=350px}
+
+Friendly Universe is a Qualtrics survey template to anonymously measure the structure of individuals' social networks. Friendly Universe measures the nodes and edges of the network, as well as the group (i.e. family, friends), and the emotional closeness of each node. This tool is easy to use and can be custromized through Qualtrics and Javascript.
+
+[Github repo](https://github.com/ruipei1/friendlyUniverse)
+
+<br>
+<br>
+
+#### 2. [Profile Pic Maker](https://pfpmaker.com/)
+
+![](files/images/profilepic.jpg){width=250px}
+
+
+An online tool that uploads portrait photos, automatically extracts the avatar, and generates a profile picture.
+
+<br>
+<br>
+<br>
+<br>
+
+#### 3. How I build this site. 
+
+I built this site using Rmarkdown. I was specifically looking for tools to build a personal website with the following considerations:
+
+1. Simple: All I needed was to display some information on a static website. I was not planning on writing blogs.
+
+2. Automated: such as being able to pull information from my google scholar page.
+
+3. Easy to use.
+
+I ended up building this site using Rstudio, inspired by [this tutorial](https://github.com/privefl/rmarkdown-website-template). 
+
+<br>
+
+
+#### 4. Tips from the Social Identity and Morality Lab (PI: Dr. Jay Van Bavel)
+
+A series of Youtube videos featuring useful topics such as: "Tips on Landing a Postdoc", "Making an R Shiny App", "How to Use Zotero", and "How R can help you build Qualtrics Surveys". 
+
+[Link](https://www.youtube.com/playlist?list=PL8lY6QBWTmLFAlt6AW9blWjkWe6I_yDms)
+
+<br>
+
+#### 5. Syllabus on data management
+
+Syllabus (with A LOT of useful resources) on data management from SIPS 2021. [syllabus.docx](files/other/Data_Management_Hackathon_-_Syllabus.docx)
+
+<br>
+
+
+
+
+
+
+
+

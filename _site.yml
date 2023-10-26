@@ -1,12 +1,12 @@
 name: "my-website"
 navbar:
-  title: "Connor Brennan"
-  left:
+  title: "<span><img src=files/images/favicon.png  width=20 height=20> &nbsp;Rui Pei</span>"
+  right:
     - text: "Home"
       href: index.html
     - text: "Research"
       href: research.html
-    - text: "Papers & conferences"
+    - text: "Papers & talks"
       href: publications.html
   
       

@@ -1,10 +1,26 @@
 ---
-title: "Publications"
+title: ""
+pagetitle: "Publications & Talks"
 output:
-  html_document
+  html_document:
+    toc: yes
+    toc_float:
+      toc_depth: 3
+      collapsed: no
+      smooth_scroll: yes
 ---
 
-```{r echo= FALSE, message=FALSE, warning=FALSE}
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+
+</style>
+
+<center class="h1"> Publications & Talks </center>
+
+
+```{r echo= FALSE, message=FALSE, warning = FALSE}
 rm(list = ls())
 if (!require("pacman")) install.packages("pacman",repos = "http://cran.us.r-project.org")
 pacman::p_load(ggplot2, tidyverse, dplyr, scholar, knitr, kableExtra,readxl)
@@ -19,12 +35,14 @@ process_paper_df = function(pub_df){
     pubstring = paste0(reordered_pub$author[i], " (",
                      reordered_pub$year[i],
                      "). ", reordered_pub$title[i], ". *",
-                     reordered_pub$journal[i], "*     ")
+                     reordered_pub$journal[i], "*     ",
+                     "[link to paper](files/papers/", reordered_pub$pubid[i], ".pdf)")
   reordered_pub$pubstring[i] = pubstring
   }
 
   reordered_pub = reordered_pub %>%
-  mutate(id = c(1:nrow(reordered_pub)))   # add links to publications
+  mutate(id = c(1:nrow(reordered_pub)),
+         link = paste0("[link to paper](files/papers/", pubid, ".pdf)"))   # add links to publications
   return(reordered_pub)
 }
 ```
@@ -32,25 +50,49 @@ process_paper_df = function(pub_df){
 <br>
 <br>
 
-<center> <h3>Papers</h3> </center>
+<center> <h2>Papers</h2> </center>
 
 
-```{r echo = FALSE,message=FALSE}
-pubs = get_publications("asa20tUAAAAJ") %>%
-  mutate_all(as.character) # get pubs from google scholar
 
-pubs_16 = pubs %>% filter(year == "2016")
-pubs_17 = pubs %>% filter(year == "2017")
-pubs_18 = pubs %>% filter(year == "2018")
+
+```{r echo = FALSE,message=FALSE, warning = FALSE}
+pubs = get_publications("UGCZ5GAAAAAJ") %>%
+  mutate_all(as.character)  %>%# get pubs from google scholar
+  filter(pubid != "WF5omc3nYNoC") %>%
+  mutate(journal = ifelse(journal=="Social and Personality Psychology Compass, e",
+                          "Social and Personality Psychology Compass",journal))
+
 pubs_19 = pubs %>% filter(year == "2019")
 pubs_20 = pubs %>% filter(year == "2020")
+pubs_21 = pubs %>% filter(year == "2021")
+pubs_22 = pubs %>% filter(year == "2022")
+pubs_23 = pubs %>% filter(year == "2023")
 
-
-reordered_16 = process_paper_df(pubs_16)
-reordered_17 = process_paper_df(pubs_17)
-reordered_18 = process_paper_df(pubs_18)
 reordered_19 = process_paper_df(pubs_19)
 reordered_20 = process_paper_df(pubs_20)
+reordered_21 = process_paper_df(pubs_21)
+reordered_22 = process_paper_df(pubs_22)
+reordered_23 = process_paper_df(pubs_23)
+
+kable(reordered_23 %>%
+        select(id, pubstring), row.names = FALSE, col.names = NULL,
+      table.attr = "style='width:80%;'",
+      caption = "2023") %>%
+  kable_styling()
+
+
+kable(reordered_22 %>%
+        select(id, pubstring), row.names = FALSE, col.names = NULL,
+      table.attr = "style='width:80%;'",
+      caption = "2022") %>%
+  kable_styling()
+
+
+kable(reordered_21 %>%
+        select(id, pubstring), row.names = FALSE, col.names = NULL,
+      table.attr = "style='width:80%;'",
+      caption = "2021") %>%
+  kable_styling()
 
 kable(reordered_20 %>%
         select(id, pubstring), row.names = FALSE, col.names = NULL,
@@ -63,41 +105,23 @@ kable(reordered_19 %>%
       table.attr = "style='width:80%;'", 
       caption = "2019") %>%
   kable_styling()
-
-kable(reordered_18 %>%
-        select(id, pubstring), row.names = FALSE, col.names = NULL,
-      table.attr = "style='width:80%;'", 
-      caption = "2018") %>%
-  kable_styling()
-
-kable(reordered_17 %>%
-        select(id, pubstring), row.names = FALSE, col.names = NULL,
-      table.attr = "style='width:80%;'", 
-      caption = "2017") %>%
-  kable_styling()
-
-kable(reordered_16 %>%
-        select(id, pubstring), row.names = FALSE, col.names = NULL,
-      table.attr = "style='width:80%;'", 
-      caption = "2016") %>%
-  kable_styling()
 ```
 
 
 
-
-<center> <h3>Conferences and Talks</h3> </center>
+<br>
+<br>
+<center> <h2>Conference presentations & invited talks</h2> </center>
 
 
 ```{r include = TRUE,echo = FALSE, message=FALSE, warning = FALSE}
-talks <- read_excel("files/conferences.xlsx")
+talks <- read_excel("files/talks.xlsx")
 
 talks$id = c(1:nrow(talks))
 
 talks$pubstring = NA
 for (i in c(1:nrow(talks))){
   pubstring = paste0(talks$talk[i], " ",
-                     talks$presenters[i],
                      " (", talks$month[i], ", ",
                      talks$year[i], ") *",
                      talks$conference[i], "* ",
@@ -112,6 +136,20 @@ for (i in c(1:nrow(talks))){
 
 kable(talks %>%
         select(id, pubstring), row.names = FALSE, col.names = NULL,
+      table.attr = "style='width:80%;'") %>%
+  kable_styling()
+```
+
+
+
+<br>
+<br>
+<center> <h2>Open Science Data Reports</h2> </center>
+
+```{r include = TRUE,echo = FALSE, message=FALSE, warning = FALSE}
+reports = data.frame(name = "[Framing effects on the effectiveness and virality of health messages related to COVID-19](files/papers/norms_study1.html) (With the Communication Neuroscience Lab at Upenn)")
+
+kable(reports, row.names = FALSE, col.names = NULL,
       table.attr = "style='width:80%;'") %>%
   kable_styling()
 ```
