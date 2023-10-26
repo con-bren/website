@@ -1,12 +1,16 @@
 name: "my-website"
 navbar:
-  title: "<span><img src=files/images/favicon.png  width=20 height=20> &nbsp;Rui Pei</span>"
+  title: "<span><img src=files/images/favicon.png  width=20 height=20> &nbsp;Connor Brennan</span>"
   right:
     - text: "Home"
       href: index.html
-    - text: "Research"
+    - text: "Neuroscience"
       href: research.html
-    - text: "Papers & talks"
+    - text: "Machine learning & AI"
+      href: ml.html
+    - text: "Game development"
+      href: game.html
+    - text: "Publications"
       href: publications.html
   
       

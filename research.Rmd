@@ -24,37 +24,30 @@ output:
 
 <br>
 
-<center> <h1>Research</h1> </center>
+<center> <h1>Neuroscience Research</h1> </center>
 <br>
 
-Humans yearn for deep social relationships, but connecting with people is a risky business: a friendly attempt to reach out to a stranger may be rejected, or an intimate confession of feelings could fall flat. My research program is centered on these __social risk behaviors__. 
-<br>
-<br>
-I use a variety of research methods to approach this question at different levels (e.g., behavioral, social network, and brain, long and short time scales). 
-
-<br>
-
-### 1. Defining social risk taking.
-<br>
-
-One line of my research aims to advance a mechanistic understanding of social risk taking through quantitative modeling of behavioral and neuroimaging data. In one recent study ([preprint](https://osf.io/preprints/psyarxiv/8khry/)), I assessed social and financial risk taking in the same behavioral paradigm. I found that people with varying depression and anxiety levels demonstrated distinct behavioral patterns of risk taking across contexts. These results highlight that taking social risks involves unique processes compared to taking financial risks.
-
-<br>
-![](files/images/research_fig3.png){width=640px}
-<br>
-__Figure 3.__ of [paper](https://osf.io/preprints/psyarxiv/8khry/) demonstrating distinct risk taking profiles as a function of anxiety and depression. Participants with high anxiety were most likely to take financial risks, where as participants with high depression were most likely to take risks in the social financial trials (i.e., investing money in a peer). When it comes to social risks (i.e., having a conversation with a stranger), both anxiety and depression groups were more risk averse compared to the control group.
-
-
-<br>
-
-### 2. Social risk taking, social networks and wellbeing
-<br>
-A second line of my research takes social risk taking from laboratory to the real world, and examines how individuals’ social risk tendencies are associated with their wellbeing and characteristics of their social worlds (e.g., social network position). Leveraging longitudinal data at different time scales (one year and daily) in a large college student sample, I found evidence for both short-term and long-term positive effects of social risk taking on individuals’ wellbeing and social network diversity. Importantly, by combining longitudinal data at different time scales, I found that the daily emotional benefit of taking social risks is critical in contributing to an overall increase in taking social risks. This line of work illustrates the potential benefit of taking social risks on the diversity of individuals’ social networks.
 <br>
 <br>
 
-### 3. Social vs. health risk taking
+<h3>How do machines play games?</h3>
+There is a long history of artificial intelligence going circuit board to head with professional game players. Starting with Chess and recently Go, board games have been fully dominated by AI. Recently, even live action video games such as DOTA2 and Starcraft 2 have fallen to the reign of the machine. Yet, there remain many weaknesses in these artificial agents: they take may lifetimes to train, and only play a single game. We seek to use the rising field of dynamics in intelligent systems to understand how these machines perform the computations necessary to perform at super-human levels on their game of choice. How do the strategies enacted by such agents compare to those enacted by humans? 
+
 <br>
-A third line of my work focused on the relationships between social and health risk taking. Consider this scenario: when a teenager is pressured by their peer passengers to drive through a red light, running a light poses a health risk. However, it also serves to mitigate a social risk (stopping at the light), which could lead to the potential negative social outcomes such as being perceived as uncool by those friends. As such, in many cases, people may choose to take health risks to avoid taking social risks. My work in this area emphasized the central role of social context adolescent health risk taking (e.g., smoking, risky driving). Specifically, I (1) examined the neuropsychological processes underlying peer influence in a driving context ([Pei et al., 2020](https://www.sciencedirect.com/science/article/pii/S1878929320300426)), and (2) investigated the moderating roles of age and cultural contexts in social influence and conformity ([Pei et al., 2023](https://compass.onlinelibrary.wiley.com/doi/10.1111/spc3.12908); Pei et al., under review). 
+<br>
+
+<h3>LOOPER: a tool for extracting simple and interpretable models from experimentally observed neuronal activity traces.</h3>
+The properties of artificial networks that facilitate computation can be inferred by applying linear stability analysis. This is not possible in biological systems as we cannot know the full equations of motion. LOOPER attempts to rectify this problem by grouping similar trajectories of the observed neuronal activity into clusters. These clusters, which we refer to as loops, correspond to consistent patterns of activation in the system -- and thus represent some conserved computational information. The structure of branching pattern of the loops is a topological description of the dynamics that embodies the same information as standard linear stability analysis.
+
+<center>![](files/images/MethodOverview.png){width=500px}</center>
+
+<br>
+<br>
+
+<h3>Modeling <i>C. elegans</i> nervous system.</h3>
+Application of LOOPER-like analysis to nematode <i>C. elegans</i> results in a model of nervous system dynamics that allows for predictions of future animal behaviors. Surprisingly, this prediction is valid across animals observed years apart, and requires abstracting away from the raw neuronal activity to consider the overall network dynamics.
+
+<center>![](files/images/WormModel2.png){width=500px}</center>
+
 <br>
 <br>

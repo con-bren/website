@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Research</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><span><img src=files/images/favicon.png  width=20 height=20> &nbsp;Connor Brennan</span></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="research.html">Neuroscience</a>
+</li>
+<li>
+  <a href="ml.html">Machine learning &amp; AI</a>
+</li>
+<li>
+  <a href="game.html">Game development</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<style type="text/css">
+  body{
+  font-size: 13pt;
+}
+</style>
+<center>
+<p><img src="files/images/socialRisk.png" width="640" /></p>
+</center>
+<p><br></p>
+<center>
+<h1>
+Research
+</h1>
+</center>
+<p><br></p>
+<p>Humans yearn for deep social relationships, but connecting with
+people is a risky business: a friendly attempt to reach out to a
+stranger may be rejected, or an intimate confession of feelings could
+fall flat. My research program is centered on these <strong>social risk
+behaviors</strong>. <br> <br> I use a variety of research methods to
+approach this question at different levels (e.g., behavioral, social
+network, and brain, long and short time scales).</p>
+<p><br></p>
+<div id="defining-social-risk-taking." class="section level3">
+<h3>1. Defining social risk taking.</h3>
+<p><br></p>
+<p>One line of my research aims to advance a mechanistic understanding
+of social risk taking through quantitative modeling of behavioral and
+neuroimaging data. In one recent study (<a
+href="https://osf.io/preprints/psyarxiv/8khry/">preprint</a>), I
+assessed social and financial risk taking in the same behavioral
+paradigm. I found that people with varying depression and anxiety levels
+demonstrated distinct behavioral patterns of risk taking across
+contexts. These results highlight that taking social risks involves
+unique processes compared to taking financial risks.</p>
+<p><br> <img src="files/images/research_fig3.png" width="640" /> <br>
+<strong>Figure 3.</strong> of <a
+href="https://osf.io/preprints/psyarxiv/8khry/">paper</a> demonstrating
+distinct risk taking profiles as a function of anxiety and depression.
+Participants with high anxiety were most likely to take financial risks,
+where as participants with high depression were most likely to take
+risks in the social financial trials (i.e., investing money in a peer).
+When it comes to social risks (i.e., having a conversation with a
+stranger), both anxiety and depression groups were more risk averse
+compared to the control group.</p>
+<p><br></p>
+</div>
+<div id="social-risk-taking-social-networks-and-wellbeing"
+class="section level3">
+<h3>2. Social risk taking, social networks and wellbeing</h3>
+<p><br> A second line of my research takes social risk taking from
+laboratory to the real world, and examines how individuals’ social risk
+tendencies are associated with their wellbeing and characteristics of
+their social worlds (e.g., social network position). Leveraging
+longitudinal data at different time scales (one year and daily) in a
+large college student sample, I found evidence for both short-term and
+long-term positive effects of social risk taking on individuals’
+wellbeing and social network diversity. Importantly, by combining
+longitudinal data at different time scales, I found that the daily
+emotional benefit of taking social risks is critical in contributing to
+an overall increase in taking social risks. This line of work
+illustrates the potential benefit of taking social risks on the
+diversity of individuals’ social networks. <br> <br></p>
+</div>
+<div id="social-vs.-health-risk-taking" class="section level3">
+<h3>3. Social vs. health risk taking</h3>
+<p><br> A third line of my work focused on the relationships between
+social and health risk taking. Consider this scenario: when a teenager
+is pressured by their peer passengers to drive through a red light,
+running a light poses a health risk. However, it also serves to mitigate
+a social risk (stopping at the light), which could lead to the potential
+negative social outcomes such as being perceived as uncool by those
+friends. As such, in many cases, people may choose to take health risks
+to avoid taking social risks. My work in this area emphasized the
+central role of social context adolescent health risk taking (e.g.,
+smoking, risky driving). Specifically, I (1) examined the
+neuropsychological processes underlying peer influence in a driving
+context (<a
+href="https://www.sciencedirect.com/science/article/pii/S1878929320300426">Pei
+et al., 2020</a>), and (2) investigated the moderating roles of age and
+cultural contexts in social influence and conformity (<a
+href="https://compass.onlinelibrary.wiley.com/doi/10.1111/spc3.12908">Pei
+et al., 2023</a>; Pei et al., under review). <br> <br></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
