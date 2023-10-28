@@ -51,15 +51,15 @@ __Resumes__<br>
 
 
 <div class="column-right">
-I am a postdoctoral scholar at the Machine Learning and AI institute, Mila. I recieved by Ph. D. in Neuroscience from the University of Pennsylvania and hold a B.S. in Physics from the University of Washington. I am interested in understanding the mechanisms that allow intelligent systems (for example, biological brains and artificial neural networks) to perform behave adaptively to the environment they have been selected for.
+I am a postdoctoral scholar at the Machine Learning and AI institute, Mila. I recieved my Ph. D. in Neuroscience from the University of Pennsylvania and hold a B.S. in Physics from the University of Washington. I am interested in understanding the mechanisms that allow intelligent systems (for example, biological brains and artificial neural networks) to behave adaptively in the environments they have been selected for.
 
 <br>
 
-During Grad school, this meant studying how living and artificial systems performed the necessary computations to react and adapt to their environments.
+During grad school, this meant studying how living and artificial systems performed the necessary computations to react and adapt to their environments. My Thesis focused on using Dynamical Systems Theory to understand the way information flows about the brain.
 
 <br>
 
-In my postdoc, I'm taking a more direct approach by training large models in carefully constructed artificial environments that force them to learn to be adaptive.
+In my postdoc, I'm taking a more direct approach by training large models in carefully constructed artificial environments that force them to learn to be adaptive. This boils down mostly to building custom RL environments and developing high performance computing solutions on some of the biggest super computers in the US.
 
 <br>
 
