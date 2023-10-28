@@ -39,7 +39,7 @@ output:
 
 SideQuest is a side-scrolling action RPG that takes you headfirst into a challenging adventure with a band of delightfully unconventional heroes. Play solo or with friends as you conquer quests, collect loot, craft devious custom builds, and press forward towards our heroes' inescapable destiny!
 
-This project eats all my free time. I do all the game design, programming and producing.
+This project eats all my free time. I do all the game design, programming and producing. The game is fully online with both server and a peer to peer play support. It features 5 playable classes with unique skill kits and customization options. Hundreds of enemies, thousands of items, 12 epic boss fights and over 40 quests each with their own unique mechanics (ranging from simple modifications to combat, to full fledged minigames).
 </div>
 
 
