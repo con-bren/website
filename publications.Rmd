@@ -1,6 +1,6 @@
 ---
 title: ""
-pagetitle: "Publications & Talks"
+pagetitle: "Publications"
 output:
   html_document:
     toc: no
@@ -17,9 +17,24 @@ output:
 
 </style>
 
+<center class="h1"> Awards </center>
+
+<table style="width:80%; margin-left: auto; margin-right: auto;" class="table">
+<caption>
+2019
+</caption>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<h4>Google PhD Fellow</h4>
+Full tuition and $35k a year stipend.
+</td>
+</tr>
+</tbody>
+</table>
+<br><br>
+
 <center class="h1"> Publications </center>
-
-
 ```{r echo= FALSE, message=FALSE, warning=FALSE}
 rm(list = ls())
 if (!require("pacman")) install.packages("pacman",repos = "http://cran.us.r-project.org")
@@ -44,10 +59,6 @@ process_paper_df = function(pub_df){
   return(reordered_pub)
 }
 ```
-<br>
-<br>
-<br>
-
 
 
 ```{r echo = FALSE,message=FALSE}

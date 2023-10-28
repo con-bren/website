@@ -1,6 +1,6 @@
 ---
 title: ""
-pagetitle: "Rui Pei"
+pagetitle: "Connor Brennan"
 classoption: twocolumn
 ---
 
@@ -37,19 +37,33 @@ sharnik at hotmail.com <br>
 
 
 __Related links__<br>
-[Autonomous Artificial Intelligence at Mila](https://www.irina-lab.ai/about/)<br>
+<font size="-1">
+[Autonomous AI at Mila](https://www.irina-lab.ai/about/)<br>
+</font>
 
+__Resumes__<br>
+<font size="-1">
+[Machine Learning Researcher Resume](files/Machine Learning Resume.pdf)<br>
+[Game Developer Resume](files/Game Engineer Resume.pdf)<br>
+</font>
 
 </div>
 
 
 <div class="column-right">
-[TO BE UPDATED]I am a postdoctoral scholar in Neuroscience at the University of Pennsylvania. I have a B.S. in Physics from the university of Washington. I am interested in understanding the mechanisms that allow intelligent systems (for example, biological brains and artificial neural networks) to perform behave adaptively to the environment they have been selected for
-
+I am a postdoctoral scholar at the Machine Learning and AI institute, Mila. I recieved by Ph. D. in Neuroscience from the University of Pennsylvania and hold a B.S. in Physics from the University of Washington. I am interested in understanding the mechanisms that allow intelligent systems (for example, biological brains and artificial neural networks) to perform behave adaptively to the environment they have been selected for.
 
 <br>
+
+During Grad school, this meant studying how living and artificial systems performed the necessary computations to react and adapt to their environments.
+
 <br>
-I completed a Ph.D. in Neuroscience at the University of Pennsylvania. I have also worked as a game designer and developer. 
+
+In my postdoc, I'm taking a more direct approach by training large models in carefully constructed artificial environments that force them to learn to be adaptive.
+
+<br>
+
+When I'm not trying to create the singularity, I spend most of my time doing game development. This is my first passion. Fresh out of college I spent 3 years in the game industry before returning to academia. I hope someday to be able to combine both my academic studies and game development into one super awesome project!
 <br>
 <br>
 
