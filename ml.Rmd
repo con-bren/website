@@ -29,6 +29,17 @@ output:
 <center> <h1>Machine learning & AI</h1> </center>
 <br>
 
+<h3>Publications</h3>
+::: {style="float: left;margin-right: 20px;"}
+![](files/images/u3.png){width="460px"}
+:::
+
+[United Unity Universe](https://openreview.net/forum?id=NTkUXqDvlg#discussion) (U3)
+
+DeepMind showed that using a procedurally generated smooth task landscape is sufficient to endow agents with the ability to understand their environment in such a way that they are able to form hypotheses, test those hypotheses, and ultimately capitalize on the results. This could be a major breakthrough for AI sentience research. This paper is the first step in bringing that work to the open-source domain.
+
+<br>
+
 <h3>Motivation</h3>
 My goal is to create artificial agents that are able to learn and adapt to novel environments on the fly. The following projects are all in service of that goal.
 

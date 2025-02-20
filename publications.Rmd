@@ -35,6 +35,21 @@ Full tuition and $35k a year stipend.
 <br><br>
 
 <center class="h1"> Publications </center>
+<table style="width:80%; margin-left: auto; margin-right: auto;" class="table">
+<caption>
+2024
+</caption>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Connor Brennan, Andrew Robert Williams, Omar G. Younis, Vedant Vyas, Daria Yasafova, Irina Rish (2024). Using Unity to Help Solve Reinforcement Learning. <em>NeurIPS</em>
+</td>
+</tr>
+</tbody>
+</table>
 ```{r echo= FALSE, message=FALSE, warning=FALSE}
 rm(list = ls())
 if (!require("pacman")) install.packages("pacman",repos = "http://cran.us.r-project.org")
